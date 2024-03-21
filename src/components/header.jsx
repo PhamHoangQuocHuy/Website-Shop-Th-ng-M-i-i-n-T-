@@ -1,11 +1,75 @@
-import React from 'react'
+import React from 'react';
+import { IoMdCall } from "react-icons/io";
+import { MdMailOutline } from "react-icons/md";
+import { Link } from 'react-router-dom';
+import logo from '../assets/images/logo.jpg';
+import { HiOutlineInboxIn } from "react-icons/hi";
+import { VscAccount } from "react-icons/vsc";
+import { LiaShoppingCartSolid } from "react-icons/lia";
 
-const header = () => {
+const Header = () => {
   return (
-    <div>
-      header
-    </div>
-  )
+    <>
+      <header className='header-top-strip p-1 px-4 shadow-sd'>
+        <div className="container-xxl">
+          <div className="row align-items-center justify-content-between">
+            <div className="col-3">
+              <p><strong>The trending outfits at 100% off</strong></p>
+            </div>
+            <div className="col-3 d-flex justify-content-end">
+              <a href="tel:+84 123456789" className='d-flex align-items-center'>
+                <IoMdCall className='fs-3 me-2' />
+                Call us: +84 123456789
+              </a>
+              <Link to="/contact" className='d-flex align-items-center ms-4'>
+                <MdMailOutline className='fs-3 me-2' />
+                Contact
+              </Link>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <header className='header-upper px-3'>
+        <div className="container-xxl">
+          <div className="row align-items-center">
+            <div className="col-2 m-auto text-center">
+              <Link to='/'><img src={logo} alt="Logo" className='img-fluid logo' /></Link>
+            </div>
+            <div className="col-5 mt-2">
+              <div className="input-group mb-3">
+                <span className="input-group-text" id="basic-addon1">All</span>
+                <input type="text" className="form-control p-2" placeholder="Search product" aria-label="Search" />
+                <button className="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+              </div>
+            </div>
+            <div className="nav-links col-5 d-flex justify-content-between">
+              <Link to={'/'} className='mx-2'>Home</Link>
+              <Link to={'/shop'} className='mx-2'>Shop</Link>
+              <Link to={'/blog'} className='mx-2'>Blog</Link>
+              <Link to={'/about'} className='mx-2'>About</Link>
+              <Link to={'/contact'} className='mx-2'>Contact</Link>
+
+              <div className='nav-links-nav d-flex align-items-center justify-content-around'>
+                <Link to={'/wishlist'} className='d-flex align-items-center mx-2'>
+                  <HiOutlineInboxIn className='fs-3' />
+                  <p>Wishlist</p>
+                </Link>
+                <Link to={'/login'} className='d-flex align-items-center mx-2'>
+                  <VscAccount className='fs-3' />
+                  <p>Account</p>
+                </Link>
+                <Link to={'/cart'} className='d-flex align-items-center mx-2'>
+                  <LiaShoppingCartSolid className='fs-3' />
+                  <p>Cart</p>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </>
+  );
 }
 
-export default header
+export default Header;
