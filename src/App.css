@@ -41,7 +41,19 @@ button{
   background-color: var(--primary1);
   color: white;
 }
+.active{
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: underline;
+}
+.inactive{
+  color: var(--primary1);
+  font-weight: 400;
+}
 /* Header */
+.header-top-strip a{
+  color: var(--primary1);
+}
 .input-group button{
   background: transparent;
   font-size: 14px;
@@ -53,8 +65,24 @@ button{
 .nav-links a{
   font-size: 16px;
   text-transform: uppercase;
-  color: var(--primary1);
 }
-.nav-links-nav a{
-  color: var(--search);
+
+
+/* Footer */
+.footer{
+  background-color: var(--lighter2);
+}
+.pay img{
+  width: 5cm;
+  height: auto;
+  transition: 0.5s ease;
+}
+.pay img:hover{
+  transform: translateY(-10px);
+}
+.paymen-methods img{
+  transition: 0.5s ease;
+}
+.paymen-methods img:hover{
+  transform: translateY(-10px);
 }

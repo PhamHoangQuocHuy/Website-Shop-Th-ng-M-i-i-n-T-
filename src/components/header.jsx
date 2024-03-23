@@ -1,13 +1,14 @@
 import React from 'react';
 import { IoMdCall } from "react-icons/io";
 import { MdMailOutline } from "react-icons/md";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/images/logo.jpg';
 import { HiOutlineInboxIn } from "react-icons/hi";
 import { VscAccount } from "react-icons/vsc";
 import { LiaShoppingCartSolid } from "react-icons/lia";
 
 const Header = () => {
+  const location = useLocation();
   return (
     <>
       <header className='header-top-strip p-1 px-4 shadow-sd'>
@@ -43,25 +44,31 @@ const Header = () => {
                 <button className="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
               </div>
             </div>
-            <div className="nav-links col-5 d-flex justify-content-between">
-              <Link to={'/'} className='mx-2'>Home</Link>
-              <Link to={'/shop'} className='mx-2'>Shop</Link>
-              <Link to={'/blog'} className='mx-2'>Blog</Link>
-              <Link to={'/about'} className='mx-2'>About</Link>
-              <Link to={'/contact'} className='mx-2'>Contact</Link>
+            <div className="nav-links col-5 align-items-center d-flex justify-content-between">
+              <Link to={'/'} className={location.pathname === '/' ? 'active' : 'inactive'} style={{ marginRight: '10px' }}>Home</Link>
+              <Link to={'/shop'} className={location.pathname === '/shop' ? 'active' : 'inactive'} style={{ marginRight: '10px' }}>Shop</Link>
+              <Link to={'/blog'} className={location.pathname === '/blog' ? 'active' : 'inactive'} style={{ marginRight: '10px' }}>Blog</Link>
+              <Link to={'/about'} className={location.pathname === '/about' ? 'active' : 'inactive'} style={{ marginRight: '10px' }}>About</Link>
+              <Link to={'/contact'} className={location.pathname === '/contact' ? 'active' : 'inactive'} style={{ marginRight: '10px' }}>Contact</Link>
 
-              <div className='nav-links-nav d-flex align-items-center justify-content-around'>
-                <Link to={'/wishlist'} className='d-flex align-items-center mx-2'>
-                  <HiOutlineInboxIn className='fs-3' />
-                  <p>Wishlist</p>
+              <div className='nav-links-nav d-flex align-items-center justify-content-between'>
+                <Link to={'/wishlist'} className={location.pathname === '/wishlist' ? 'inactive' : 'active'}>
+                  <div className='d-flex align-items-center mx-2'>
+                    <span><HiOutlineInboxIn className='fs-3' /></span>
+                    <p>Wishlist</p>
+                  </div>
                 </Link>
-                <Link to={'/login'} className='d-flex align-items-center mx-2'>
-                  <VscAccount className='fs-3' />
-                  <p>Account</p>
+                <Link to={'/login'} className={location.pathname === '/login' ? 'inactive' : 'active'}>
+                  <div className='d-flex align-items-center mx-2'>
+                    <span><VscAccount className='fs-3' /></span>
+                    <p>Account</p>
+                  </div>
                 </Link>
-                <Link to={'/cart'} className='d-flex align-items-center mx-2'>
-                  <LiaShoppingCartSolid className='fs-3' />
-                  <p>Cart</p>
+                <Link to={'/cart'} className={location.pathname === '/cart' ? 'inactive' : 'active'}>
+                  <div className='d-flex align-items-center mx-2'>
+                      <LiaShoppingCartSolid className='fs-3' />
+                      <p>Cart</p>
+                  </div>
                 </Link>
               </div>
             </div>
