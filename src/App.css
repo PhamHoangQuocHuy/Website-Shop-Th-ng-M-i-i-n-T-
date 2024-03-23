@@ -50,6 +50,7 @@ button{
   color: var(--primary1);
   font-weight: 400;
 }
+
 /* Header */
 .header-top-strip a{
   color: var(--primary1);
@@ -85,4 +86,10 @@ button{
 }
 .paymen-methods img:hover{
   transform: translateY(-10px);
+}
+
+/* Home */
+.banner-details img{
+  width: 1296px;
+  height: 274px;
 }
