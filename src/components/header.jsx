@@ -6,6 +6,7 @@ import logo from '../assets/images/logo.jpg';
 import { HiOutlineInboxIn } from "react-icons/hi";
 import { VscAccount } from "react-icons/vsc";
 import { LiaShoppingCartSolid } from "react-icons/lia";
+import { IoSearch } from "react-icons/io5";
 
 const Header = () => {
   const location = useLocation();
@@ -41,7 +42,7 @@ const Header = () => {
               <div className="input-group mb-3">
                 <span className="input-group-text" id="basic-addon1">All</span>
                 <input type="text" className="form-control p-2" placeholder="Search product" aria-label="Search" />
-                <button className="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                <button className="btn btn-outline-secondary" type="button" id="button-addon2"><IoSearch/></button>
               </div>
             </div>
             <div className="nav-links col-5 align-items-center d-flex justify-content-between">
@@ -52,21 +53,21 @@ const Header = () => {
               <Link to={'/contact'} className={location.pathname === '/contact' ? 'active' : 'inactive'} style={{ marginRight: '10px' }}>Contact</Link>
 
               <div className='nav-links-nav d-flex align-items-center justify-content-between'>
-                <Link to={'/wishlist'} className={location.pathname === '/wishlist' ? 'inactive' : 'active'}>
+                <Link to={'/wishlist'} className={location.pathname === '/wishlist' ? 'active' : 'inactive'}>
                   <div className='d-flex align-items-center mx-2'>
-                    <span><HiOutlineInboxIn className='fs-3' /></span>
+                    <span><HiOutlineInboxIn className='fs-3'  size="20px" /></span>
                     <p>Wishlist</p>
                   </div>
                 </Link>
-                <Link to={'/login'} className={location.pathname === '/login' ? 'inactive' : 'active'}>
+                <Link to={'/login'} className={location.pathname === '/login' ? 'active' : 'inactive'}>
                   <div className='d-flex align-items-center mx-2'>
-                    <span><VscAccount className='fs-3' /></span>
+                    <span><VscAccount className='fs-3'  size="20px" /></span>
                     <p>Account</p>
                   </div>
                 </Link>
-                <Link to={'/cart'} className={location.pathname === '/cart' ? 'inactive' : 'active'}>
+                <Link to={'/cart'} className={location.pathname === '/cart' ? 'active' : 'inactive'}>
                   <div className='d-flex align-items-center mx-2'>
-                      <LiaShoppingCartSolid className='fs-3' />
+                      <LiaShoppingCartSolid className='fs-3'  />
                       <p>Cart</p>
                   </div>
                 </Link>

@@ -53,15 +53,18 @@ button{
 
 /* Header */
 .header-top-strip a{
-  color: var(--primary1);
+
 }
 .input-group button{
   background: transparent;
   font-size: 14px;
-  color: var(--search);
+  /* color: var(--search); */
 }
 .header-upper{
   background-color: var(--lighter2);
+}
+.header-upper :hover{
+  color: var(--search);
 }
 .nav-links a{
   font-size: 16px;
