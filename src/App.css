@@ -34,6 +34,17 @@ p{
   font-size: 14px;
   margin: auto;
 }
+/* h1{
+  font-weight: 600;
+  color: var(--search);
+  margin: 10px;
+  font-size: 40px;
+}
+h2{
+  font-weight: 400;
+  color: var(--primary1);
+  font-size: 32px;
+} */
 
 button{
   padding: 12px 10px;
@@ -94,5 +105,8 @@ button{
 /* Home */
 .banner-details img{
   width: 1296px;
-  height: 274px;
+  height: 320px;
+}
+.banner-details{
+  position: relative;
 }

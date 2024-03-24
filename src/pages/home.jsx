@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {Link} from 'react-router-dom'
 import Slide1 from '../assets/images/slide1.jpg';
 import Slide2 from '../assets/images/slide2.jpg';
 import Slide3 from '../assets/images/slide3.jpg';
@@ -38,7 +39,7 @@ const Home = () => {
     <section className='banner p-5'>
       <div className="container-xxl">
         <div className="row">
-          <div className="banner-details" onMouseLeave={handleMouseLeave}>
+          <div className="banner-details d-flex flex-column align-items-center justify-content-center" onMouseLeave={handleMouseLeave}>
             <img src={images[currentImageIndex]} alt='' style={{ width: '100%' }} />
           </div>
           <div className="banner-radio-buttons d-flex justify-content-center mt-3">
