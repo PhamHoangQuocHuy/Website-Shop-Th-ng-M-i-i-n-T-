@@ -7,6 +7,7 @@ import Slide3 from '../assets/images/slide3.jpg';
 import Slide4 from '../assets/images/slide4.jpg';
 import Slide5 from '../assets/images/slide5.jpg';
 import Slide6 from '../assets/images/slide6.jpg';
+import FeaturedProducts from '../components/featuredProducts';
 
 const CountdownTimer = ({ initialHours = 0, initialMinutes = 0, initialSeconds = 0 }) => {
   const [timeLeft, setTimeLeft] = useState({
@@ -115,7 +116,7 @@ const Home = () => {
 
       <Hero />
 
-      <section className='featured-product p-5'>
+      <section className='featured-products p-5'>
         <div className="container-xxl">
           <div className="row">
             <div className="text-center">
@@ -124,6 +125,7 @@ const Home = () => {
                 <CountdownTimer initialHours={2} initialMinutes={40} initialSeconds={38} />
               </p>
             </div>
+              <FeaturedProducts />
           </div>
         </div>
       </section>

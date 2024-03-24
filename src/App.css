@@ -70,7 +70,7 @@ button {
 
 /* Header */
 /* .header-top-strip a {
-  
+
 } */
 
 .input-group button {
@@ -193,4 +193,15 @@ button {
 .countdown-timer .time-segment:hover {
   transform: scale(1.1);
   font-weight: bold;
+}
+
+.featured-products .card img{
+  border-radius: 20px;
+}
+.featured-products .card{
+  border-radius: 20px;
+  max-width: 250px;
+}
+.featured-products.card span{
+  color: var(--darken);
 }
