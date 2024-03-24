@@ -19,94 +19,178 @@
   max-width: 100%;
   height: 40px;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-a{
+a {
   text-decoration: none;
   font-size: 14px;
 }
-p{
+
+p {
   font-size: 14px;
   margin: auto;
 }
-/* h1{
+
+h1 {
   font-weight: 600;
   color: var(--search);
-  margin: 10px;
   font-size: 40px;
 }
-h2{
+
+/* h2{
   font-weight: 400;
   color: var(--primary1);
   font-size: 32px;
 } */
 
-button{
+button {
   padding: 12px 10px;
   font-size: 14px;
   background-color: var(--primary1);
   color: white;
 }
-.active{
+
+.active {
   font-weight: 600;
   color: var(--primary);
   text-decoration: underline;
 }
-.inactive{
+
+.inactive {
   color: var(--primary1);
   font-weight: 400;
 }
 
 /* Header */
-.header-top-strip a{
+/* .header-top-strip a {
+  
+} */
 
-}
-.input-group button{
-  background: transparent;
+.input-group button {
+  background: var(--search);
   font-size: 14px;
-  /* color: var(--search); */
+  color: white;
 }
-.header-upper{
+
+.input-group :hover {
+  background: var(--lighter2);
+}
+
+.header-upper {
   background-color: var(--lighter2);
 }
-.header-upper :hover{
+
+.header-upper :hover {
   color: var(--search);
 }
-.nav-links a{
+
+.nav-links a {
   font-size: 16px;
   text-transform: uppercase;
 }
 
 
 /* Footer */
-.footer{
+.footer {
   background-color: var(--lighter2);
 }
-.pay img{
+
+.pay img {
   width: 5cm;
   height: auto;
   transition: 0.5s ease;
 }
-.pay img:hover{
-  transform: translateY(-10px);
-}
-.paymen-methods img{
-  transition: 0.5s ease;
-}
-.paymen-methods img:hover{
+
+.pay img:hover {
   transform: translateY(-10px);
 }
 
+.paymen-methods img {
+  transition: 0.5s ease;
+}
+
+.paymen-methods img:hover {
+  transform: translateY(-10px);
+}
+
+.footer-details a:hover {
+  font-weight: bold;
+}
+
 /* Home */
-.banner-details img{
+.banner-details img {
   width: 1296px;
   height: 320px;
+  display: block;
+  max-width: 100%;
 }
-.banner-details{
-  position: relative;
+
+.banner-details a {
+  display: block;
+  width: 100%;
+}
+
+.hero-details img {
+  width: 100px;
+  height: 70px;
+}
+
+.hero-details .card {
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  background-color: white;
+}
+
+.hero-details img {
+  transition: 0.5s ease;
+}
+
+.hero-details img:hover {
+  transform: translateY(-10px);
+}
+
+.hero-details a {
+  color: #000;
+}
+
+.hero-details a:hover {
+  font-weight: bold;
+}
+
+/* Countdown Timer Styles */
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  /* Khoảng cách giữa các khung và dấu ':' */
+}
+
+.countdown-timer .time-segment {
+  background-color: #D3232A;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 12px;
+  min-width: 50px;
+  text-align: center;
+  font-size: 20px;
+  transition: transform 0.2s ease;
+}
+
+.countdown-timer .separator {
+  font-size: 26px;
+  color: #333;
+  font-weight: bold;
+}
+
+.countdown-timer .time-segment:hover {
+  transform: scale(1.1);
+  font-weight: bold;
 }
