@@ -1,9 +1,9 @@
 import React from 'react'
-import Img1 from '../assets/images/support.png'
-import Img2 from '../assets/images/delivery.png'
-import Img3 from '../assets/images/money.png'
-import Img4 from '../assets/images/shop.png'
-import Img5 from '../assets/images/stonk.png'
+import Img1 from '../assets/images/FastOrder.png'
+import Img2 from '../assets/images/QuickDelivery.png'
+import Img3 from '../assets/images/HighSave.png'
+import Img4 from '../assets/images/Support.png'
+import Img5 from '../assets/images/OnlineOrder.png'
 
 import { Link } from 'react-router-dom';
 const hero = () => {
@@ -15,7 +15,7 @@ const hero = () => {
                         <div className="card p-2">
                             <div className="cart-details p-2">
                                 <Link><img src={Img1} alt="" className='img-fluid' />
-                                    <p>Support 24/7</p>
+                                    <p>Fast Order</p>
                                 </Link>
                             </div>
                         </div>
@@ -29,21 +29,21 @@ const hero = () => {
                         <div className="card p-2">
                             <div className="cart-details p-2">
                                 <Link><img src={Img3} alt="" className='img-fluid' />
-                                    <p>Refund</p>
+                                    <p>High Save</p>
                                 </Link>
                             </div>
                         </div>
                         <div className="card p-2">
                             <div className="cart-details p-2">
                                 <Link><img src={Img4} alt="" className='img-fluid' />
-                                    <p>Online Order</p>
+                                    <p>24/7 Support</p>
                                 </Link>
                             </div>
                         </div>
                         <div className="card p-2">
                             <div className="cart-details p-2">
                                 <Link><img src={Img5} alt="" className='img-fluid' />
-                                    <p>High Save</p>
+                                    <p>Online Order</p>
                                 </Link>
                             </div>
                         </div>

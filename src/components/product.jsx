@@ -3,7 +3,7 @@ export const PRODUCTS = [
   {
     id: 0,
     image: Sp1,
-    name: "Ốp lưng ip15",
+    name: "Ốp lưng ip15 aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
     price: 100.00,
     brand: "lukaku",
     status: "in stock",

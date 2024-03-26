@@ -2,11 +2,10 @@ import React from 'react';
 import { IoMdCall } from "react-icons/io";
 import { MdMailOutline } from "react-icons/md";
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../assets/images/logo.jpg';
+import logo from '../assets/images/logo.png';
 import { HiOutlineInboxIn } from "react-icons/hi";
 import { VscAccount } from "react-icons/vsc";
 import { LiaShoppingCartSolid } from "react-icons/lia";
-import { IoSearch } from "react-icons/io5";
 
 const Header = () => {
   const location = useLocation();
@@ -42,7 +41,7 @@ const Header = () => {
               <div className="input-group mb-3">
                 <span className="input-group-text" id="basic-addon1">All</span>
                 <input type="text" className="form-control p-2" placeholder="Search product" aria-label="Search" />
-                <button className="btn btn-outline-secondary" type="button" id="button-addon2"><IoSearch/></button>
+                <button className="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
               </div>
             </div>
             <div className="nav-links col-5 align-items-center d-flex justify-content-between">
