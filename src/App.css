@@ -97,7 +97,10 @@ button {
 
 /* Footer */
 .footer {
-  background-color: var(--lighter2);
+  background-color: white;
+}
+.subscribe-footer{
+  background-color: var(--lighter1);
 }
 
 .pay img {
@@ -117,7 +120,10 @@ button {
 .paymen-methods img:hover {
   transform: translateY(-10px);
 }
-
+.footer-icon:hover {
+  transform: scale(1.5); 
+  transition: transform 0.3s ease-in-out; 
+}
 .footer-details a:hover {
   font-weight: bold;
 }
@@ -215,19 +221,62 @@ button {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 30vh;
+  height: 25vh;
 }
 .button-repair{
   padding: 12px 10px;
   font-size: 18px;
   border-radius: 10px;
   color: white;
-  background: var(--primary);
+  background: var(--darken);
   border: 1px solid transparent;
   transition: 0.5s ease;
 }
-.button-repair :hover{
+.button-repair:hover{
   background: transparent;
-  color: var(--primary1);
+  color: white;
   border: 1px solid var(--primary);
+}
+.new-products .card img{
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+}
+.new-products .card{
+  border-radius: 10px;
+  border: 1px solid #000;
+  max-width: 250px;
+}
+.new-products.card span{
+  color: var(--darken);
+}
+
+.button-deals{
+  padding: 12px 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: white;
+  background: var(--search);
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+}
+.button-deals:hover{
+  background: transparent;
+  color: var(--search);
+  border: 1px solid var(--darker);
+}
+.button-blog{
+  padding: 10px 8px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: var(--primary1);
+  background: transparent;
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+
+}
+.button-blog:hover{
+  background: transparent;
+  color: var(--search);
+  border: 1px solid var(--darker);
 }

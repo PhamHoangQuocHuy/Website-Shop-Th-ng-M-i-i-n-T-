@@ -8,6 +8,10 @@ import Slide4 from '../assets/images/slide4.jpg';
 import Slide5 from '../assets/images/slide5.jpg';
 import Slide6 from '../assets/images/slide6.jpg';
 import FeaturedProducts from '../components/featuredProducts';
+import NewArrival from '../components/newArrival';
+import Deal1 from '../assets/images/deal1.jpg'
+import Deal2 from '../assets/images/deal2.jpg'
+import Blogs from '../components/blogs'
 
 const CountdownTimer = ({ initialHours = 0, initialMinutes = 0, initialSeconds = 0 }) => {
   const [timeLeft, setTimeLeft] = useState({
@@ -116,7 +120,7 @@ const Home = () => {
 
       <Hero />
 
-      <section className='featured-products p-5'>
+      <section className='featured-products p-5 mb-5'>
         <div className="container-xxl">
           <div className="row">
             <div className="text-center">
@@ -125,7 +129,7 @@ const Home = () => {
                 <CountdownTimer initialHours={2} initialMinutes={40} initialSeconds={38} />
               </p>
             </div>
-              <FeaturedProducts />
+            <FeaturedProducts />
           </div>
         </div>
       </section>
@@ -133,13 +137,84 @@ const Home = () => {
       <section className='repair'>
         <div className="container-xxl">
           <div className="row">
-              <div className="repair-details d-flex flex-column text-center align-items-center p-3">
-                  <span className='text-white mt-1'>Repair service</span>
-                  <h2 className='text-white'>On <span className='text-danger'><b>70%</b></span> Off on all Product Anh Accessories</h2>
-                  <div className="mt-3">
-                    <button className='button-repair'>Explore Now</button>
-                  </div>
+            <div className="repair-details d-flex flex-column text-center align-items-center p-3">
+              <span className='text-white mt-1'>Repair service</span>
+              <h2 className='text-white'>On <span className='text-success'><b>70%</b></span> Off on all Product Anh Accessories</h2>
+              <div className="mt-3">
+                <button className='button-repair'>Explore Now</button>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='new-products p-5'>
+        <div className="container-xxl">
+          <div className="row">
+            <div className="text-center">
+              <h1>New Arrivals</h1>
+              <p>Your Best Designer  Outfits</p>
+            </div>
+            <NewArrival />
+          </div>
+        </div>
+      </section>
+
+      <section className="deals p-5">
+        <div className="container-xxl">
+          <div className="row">
+            {/* Deal 1 */}
+            <div className="col-6 p-4">
+              <div className="card">
+                <div className="d-flex">
+                  <div className="col-md-4">
+                    <img src={Deal1} alt="" className='img-fluid rounded-start h-100 p-2' />
+                  </div>
+                  <div className="col-md-8">
+                    <div className="card-body">
+                      <span>Hot Deals</span>
+                      <h3>Buy 1 Get 1 FREE</h3>
+                      <p>The latest best collection in our closet Feel Cute with our outfits</p>
+                      <button className="button-deals mt-3">
+                        Learn More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Deal 2 */}
+            <div className="col-6 p-4">
+              <div className="card">
+                <div className="d-flex">
+                  <div className="col-md-4">
+                    <img src={Deal2} alt="" className='img-fluid rounded-start h-100 p-2' />
+                  </div>
+                  <div className="col-md-8">
+                    <div className="card-body">
+                      <span>Hot Deals</span>
+                      <h3>Buy 1 Get 1 FREE</h3>
+                      <p>The latest best collection in our closet Feel Cute with our outfits</p>
+                      <button className="button-deals mt-3">
+                        Learn More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='blogs p-3 mb-2'>
+        <div className="container-xxl">
+          <div className="row">
+            <div className="text-center mb-4">
+              <h1>What our customer say</h1>
+              <p>Our customers never miss a bit on  providing feedback</p>
+            </div>
+            <Blogs />
           </div>
         </div>
       </section>

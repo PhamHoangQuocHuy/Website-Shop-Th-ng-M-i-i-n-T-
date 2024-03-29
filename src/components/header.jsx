@@ -31,7 +31,7 @@ const Header = () => {
         </div>
       </header>
 
-      <header className='header-upper px-3'>
+      <header className='header-upper px-3 sticky-top'>
         <div className="container-xxl">
           <div className="row align-items-center">
             <div className="col-2 m-auto text-center">
@@ -39,7 +39,6 @@ const Header = () => {
             </div>
             <div className="col-5 mt-2">
               <div className="input-group mb-3">
-                <span className="input-group-text" id="basic-addon1">All</span>
                 <input type="text" className="form-control p-2" placeholder="Search product" aria-label="Search" />
                 <button className="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
               </div>

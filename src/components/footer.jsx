@@ -10,9 +10,22 @@ const footer = () => {
   return <>
     <footer className='footer p-5'>
       <div className="container-xxl">
-        {/* ROW 1 */}
         <div className="row">
-          <div className="col-4 d-flex flex-column">
+          <div className="subscribe-footer col-12 d-flex align-items-center pt-3">
+            <div className="col-8 text-center mb-3">
+              <h3>Sign Up for a newsletter</h3>
+              <p>Get email updates on all our <Link>special offers</Link></p>
+            </div>
+            <div className="col-4">
+              <div className="input-group mb-3 text-center">
+                <input type="text" className="form-control p-2" placeholder="Enter email here" aria-label="Search" />
+                <button className="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe</button>
+              </div>
+            </div>
+          </div>
+          <hr className='m-2 mt-4' />
+          
+          <div className="col-4 d-flex flex-column pt">
             <h3 className='mb-4'>Contact Us</h3>
             <div className="footer-details">
               <p className='mb-3'><b>Address:</b>180 Cao Lỗ, Phường 4, Quận 8 TP.HCM</p>
@@ -20,9 +33,9 @@ const footer = () => {
               <p className='mb-3'><b>Open at: </b> 7AM - 10PM</p>
               <p className='mb-3'><b>Follow Us: </b></p>
               <div className="col-3 d-flex mb-3 social-icons justify-content-around">
-                <Link><FaFacebookSquare className='fs-4' /></Link>
-                <Link><FaTwitter className='fs-4' /></Link>
-                <Link><IoLogoInstagram className='fs-4' /></Link>
+                <Link className='footer-icon'><FaFacebookSquare className='fs-4' /></Link>
+                <Link className='footer-icon'><FaTwitter className='fs-4' /></Link>
+                <Link className='footer-icon'><IoLogoInstagram className='fs-4' /></Link>
               </div>
             </div>
           </div>
@@ -63,12 +76,11 @@ const footer = () => {
         </div>
 
         <hr />
-        {/* ROW 2 */}
         <div className="row d-flex align-items-center justify-content-between">
           <div className="col p-2">
             <p>&copy; Developed by Phạm Hoàng Quốc Huy 2024</p>
           </div>
-          <div className="col d-flex justify-content-end">
+          <div className="footer-details col d-flex justify-content-end">
             <Link className='mx-2 text-black'>Privacy Policy</Link>
             <Link className='mx-2 text-black'>Terms of Use</Link>
             <Link className='mx-2 text-black'>Contact Me</Link>
