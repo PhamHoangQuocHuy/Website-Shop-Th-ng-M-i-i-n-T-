@@ -280,3 +280,15 @@ button {
   color: var(--search);
   border: 1px solid var(--darker);
 }
+
+/* SHOP */
+.shop-banner{
+  background: url(./assets/images/shop-banner.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 25vh;
+}
+.price{
+  color: var(--primary);
+}

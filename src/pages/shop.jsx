@@ -1,11 +1,32 @@
+// Hiển thị sản phẩm
 import React from 'react'
-
+import Shopitems from '../components/shopitems'
 const shop = () => {
-  return (
-    <div>
-      shop
-    </div>
-  )
+  return <>
+    <section className='shop-banner p-2'>
+      <div className="container-xxl">
+        <div className="row justify-content-center align-items-center">
+          <div className="repair-details text-center p-5">
+            <div>
+              <h1 className='text-white'><span className='text-success'><b>100%</b></span> Off on all Product Anh Accessories</h1>
+            </div>
+            <div>
+              <p className='text-white'>Make Your Orders We will Deliver</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className='shop=products p-5'>
+      <div className="contain-xxl">
+        <div className="row">
+          <Shopitems />
+        </div>
+      </div>
+    </section>
+
+  </>
 }
 
 export default shop

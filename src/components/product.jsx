@@ -1,3 +1,4 @@
+// Chứa dữ liệu SẢN PHẨM
 import Sp1 from '../assets/images/sp1.jpg'
 export const PRODUCTS = [
   {
