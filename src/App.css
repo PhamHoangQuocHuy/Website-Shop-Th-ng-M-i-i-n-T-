@@ -291,4 +291,77 @@ button {
 }
 .price{
   color: var(--primary);
+  font-size: 16px;
+}
+.view-button{
+  transition: 0.5s ease;
+}
+.view-button:hover{
+  color: var(--search);
+}
+.add-btn{
+  border-radius: 10px;
+  background: var(--primary1);
+  border: none;
+  padding: 12px 10px;
+}
+.shop-products .card img{
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+}
+.shop-products .card{
+  border-radius: 10px;
+  border: 1px solid #000;
+  max-width: 250px;
+}
+.shop-products.card span{
+  color: var(--darken);
+}
+.pagination a{
+  padding: 10px;
+  font-size: 16px;
+  color: var(--darken);
+}
+.red {
+  color: var(--primary);
+}
+
+/* Cart */
+input{
+  padding: 12px;
+  width: 40px;
+  color: var(--search);
+  font-size: 16px;
+  font-weight: 600;
+}
+.cart-item img{
+  max-width: 100%;
+  height: 3cm;
+  border-radius: 20px;
+}
+thead{
+  font-size: 16px;
+  align-items: center;
+}
+tbody{
+  background: white;
+}
+.cart-item button{
+  background: transparent;
+  padding: 10px;
+  border: 1px solid;
+  color: black;
+  font-size: 14px;
+}
+.form-control {
+  border: 1px solid #000;
+}
+.total {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+.img-cart{
+  text-align: center;
 }

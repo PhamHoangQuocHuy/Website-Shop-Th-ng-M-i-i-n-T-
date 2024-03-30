@@ -1,3 +1,4 @@
+// hàm liệt kê sp
 import React from 'react'
 import Prod from './prod'
 import {PRODUCTS, PRODUCTS1} from './product'

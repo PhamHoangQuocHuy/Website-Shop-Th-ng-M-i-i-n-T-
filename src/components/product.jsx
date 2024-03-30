@@ -61,7 +61,7 @@ export const PRODUCTS = [
 ]
 export const PRODUCTS1 = [
   {
-    id: 0,
+    id: 6,
     image: Sp1,
     name: "Ốp lưng ip15 aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
     price: 100.00,
@@ -70,7 +70,7 @@ export const PRODUCTS1 = [
     rate: "50% off"
   },
   {
-    id: 1,
+    id: 7,
     image: Sp1,
     name: "Ốp lưng ip15",
     price: 100.00,
@@ -79,7 +79,7 @@ export const PRODUCTS1 = [
     rate: "50% off"
   },
   {
-    id: 2,
+    id: 8,
     image: Sp1,
     name: "Ốp lưng ip15",
     price: 100.00,
@@ -88,17 +88,7 @@ export const PRODUCTS1 = [
     rate: "50% off"
   },
   {
-    id: 3,
-    image: Sp1,
-    name: "Ốp lưng ip15",
-    price: 100.00,
-    brand: "lukaku",
-    status: "in stock",
-    rate: "50% off"
-  },
-
-  {
-    id: 4,
+    id: 9,
     image: Sp1,
     name: "Ốp lưng ip15",
     price: 100.00,
@@ -108,7 +98,17 @@ export const PRODUCTS1 = [
   },
 
   {
-    id: 5,
+    id: 10,
+    image: Sp1,
+    name: "Ốp lưng ip15",
+    price: 100.00,
+    brand: "lukaku",
+    status: "in stock",
+    rate: "50% off"
+  },
+
+  {
+    id: 11,
     image: Sp1,
     name: "Ốp lưng ip15",
     price: 100.00,

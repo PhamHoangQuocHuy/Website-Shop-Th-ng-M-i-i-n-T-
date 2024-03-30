@@ -1,7 +1,8 @@
-//
+//hiển thị sp
 import React, { useContext } from 'react'
 import { ShopContext } from './shopcontext';
 import ReactStars from "react-rating-stars-component";
+import { Link } from 'react-router-dom';
 
 function truncateText(text, maxLength) {
     if (text.length <= maxLength) {
@@ -16,12 +17,14 @@ const prod = (props) => {
     const { viewProductDetails, addToCart, cartItems } = useContext(ShopContext);
     const cartItemsCount = cartItems[id];
     return <>
-        <div key={id} className="col-3">
+        <div key={id} className="col-3 mb-4">
             <div className="card">
-                <img src={image} alt="" className='img-fluid card-img-top ' />
+                <div className="p-2">
+                    <img src={image} alt="" className='img-fluid card-img-top ' />
+                </div>
                 <div className="card-details p-3">
                     <span> {brand} </span>
-                    <h5 className='my-3'> {truncateText(name, 20)} </h5>
+                    <h5 className='my-2'> {truncateText(name, 20)} </h5>
                     <ReactStars
                         count={5}
                         edit={false}
@@ -29,14 +32,24 @@ const prod = (props) => {
                         size={24}
                         activeColor="#ffd700"
                     />
-                    <p className='price mb-3'> {price} <span className='text-danger'> &nbsp; <strike>{price * 2}</strike></span></p>
+                    <p className='price my-2'> {price} <span className='text-danger'> &nbsp; <strike>{price * 2}</strike></span></p>
                     <div className='d-flex align-items-center justify-content-around mb-2'>
-                        <button className='view-button' onClick={() => viewProductDetails(id)}>View Details</button>
-                        <button onClick={() => addToCart(id)}> Add To Cart {cartItemsCount > 0 && `(${cartItemsCount})`} </button>
+                        <div className="col-6 d-flex align-items-center justify-content-around">
+                            <Link to={'/details'} className='view-button' onClick={() => viewProductDetails(id)}>View Details</Link>
+                        </div>
+                        <div className="col-6 d-flex align-items-center justify-content-around">
+                            <button className='add-btn'
+                                onClick={() => {
+                                    addToCart(id);
+                                    event.target.classlist.toggle("text-success");
+                                }
+                                }
+                            > Add To Cart {cartItemsCount > 0 && `(${cartItemsCount})`} </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     </>
 }
 

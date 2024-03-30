@@ -6,9 +6,13 @@ import logo from '../assets/images/logo.png';
 import { HiOutlineInboxIn } from "react-icons/hi";
 import { VscAccount } from "react-icons/vsc";
 import { LiaShoppingCartSolid } from "react-icons/lia";
+import { useContext } from 'react';
+import { ShopContext } from './shopcontext';
 
 const Header = () => {
   const location = useLocation();
+  const { getTotalCartProducts } = useContext(ShopContext);
+  const totalProducts =getTotalCartProducts();
   return (
     <>
       <header className='header-top-strip p-1 px-4 shadow-sd'>
@@ -66,7 +70,9 @@ const Header = () => {
                 <Link to={'/cart'} className={location.pathname === '/cart' ? 'active' : 'inactive'}>
                   <div className='d-flex align-items-center mx-2'>
                       <LiaShoppingCartSolid className='fs-3'  />
-                      <p>Cart</p>
+                      <p>Cart
+                      {totalProducts > 0 && `(${totalProducts})`}
+                      </p>
                   </div>
                 </Link>
               </div>
