@@ -51,10 +51,11 @@ h1 {
 } */
 
 button {
-  padding: 12px 10px;
+  padding: 8px 5px;
   font-size: 14px;
   background-color: var(--primary1);
   color: white;
+  border-radius: 10px;
 }
 
 .active {
@@ -66,6 +67,16 @@ button {
 .inactive {
   color: var(--primary1);
   font-weight: 400;
+}
+.view-button, .add-btn {
+  transition: transform 0.3s ease;
+}
+
+.view-button:hover, .add-btn:hover {
+  transform: scale(1.05); 
+}
+.view-button{
+  font-size: 20px;
 }
 
 /* Header */
@@ -206,7 +217,7 @@ button {
 }
 .featured-products .card{
   border-radius: 10px;
-  border: 1px solid #000;
+  border: 1px solid lightgray;
   max-width: 250px;
 }
 .featured-products.card span{
@@ -244,7 +255,7 @@ button {
 }
 .new-products .card{
   border-radius: 10px;
-  border: 1px solid #000;
+  border: 1px solid lightgray;
   max-width: 250px;
 }
 .new-products.card span{
@@ -299,11 +310,12 @@ button {
 .view-button:hover{
   color: var(--search);
 }
-.add-btn{
+.add-btn button{
   border-radius: 10px;
   background: var(--primary1);
   border: none;
   padding: 12px 10px;
+  background: var(--primary1);
 }
 .shop-products .card img{
   border-radius: 20px;
@@ -312,7 +324,7 @@ button {
 }
 .shop-products .card{
   border-radius: 10px;
-  border: 1px solid #000;
+  border: 1px solid lightgray;
   max-width: 250px;
 }
 .shop-products.card span{
@@ -330,7 +342,7 @@ button {
 /* Cart */
 input{
   padding: 12px;
-  width: 40px;
+  width: 50px;
   color: var(--search);
   font-size: 16px;
   font-weight: 600;
@@ -350,12 +362,12 @@ tbody{
 .cart-item button{
   background: transparent;
   padding: 10px;
-  border: 1px solid;
+  border: 1px solid lightgray;
   color: black;
   font-size: 14px;
 }
 .form-control {
-  border: 1px solid #000;
+  border: 1px solid lightgray;
 }
 .total {
   font-size: 20px;
@@ -364,4 +376,54 @@ tbody{
 }
 .img-cart{
   text-align: center;
+}
+.add-btn:hover, .remove-btn:hover,
+.add-btn:active, .remove-btn:active {
+  border-color: black; 
+}
+.clear-cart{
+  font-size: 20px;
+  border: 1px solid lightgray;
+  padding: 8px 5px;
+  border-radius: 10px;
+}
+.clear-cart:hover{
+  background: var(--primary2);
+  color: white;
+}
+.continue-shopping-btn:hover{
+  background: var(--primary2);
+  color: white;
+  font-weight: bold;
+}
+.check-out-btn:hover{
+  background: var(--primary2);
+  color: white;
+  font-weight: bold;
+
+}
+
+/* Products */
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Products details */
+.details button{
+  background: transparent;
+  padding: 12px;
+  border: 1px solid;
+  color: black;
+  font-size: 14px;
+}
+.details input{
+  width: 5cm;
+  align-items: center;
+}
+.details input{
+  width: 100px;
 }

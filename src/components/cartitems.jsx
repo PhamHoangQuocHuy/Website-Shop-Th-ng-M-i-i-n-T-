@@ -10,18 +10,18 @@ const cartitems = (props) => {
         <tbody key={id}>
             <tr>
                 <td className='col-3'>
-                    <div className="p-2 img-cart">
+                    <div className="p-2">
                         <img src={image} alt="" className='img-fluid ' />
                     </div>
                 </td>
                 <td className='col-3'>
                     <p>Product brand: <span className="price">{brand}</span></p>
-                    <p>Product name:  <span className='price'>{name}</span></p>
+                    <p>Product name:  <span className='price'><b>{name}</b></span></p>
                     <p>Price: <span className="price">{price}</span></p>
                     <p>Items in stock: <span className="text-danger">1000</span></p>
                 </td>
 
-                <td className='text-center'>
+                <td>
                     {/* Add */}
                     <button className='add-btn mx-2'
                         onClick={() => {
@@ -32,7 +32,7 @@ const cartitems = (props) => {
                     </button>
                     <input type="text" value={cartItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value), id)} />
                     {/* Remove */}
-                    <button className='add-btn mx-2'
+                    <button className='remove-btn mx-2'
                         onClick={() => {
                             removeToCart(id);
                         }

@@ -26,20 +26,20 @@ const cart = () => {
                 }
               })}
               <div className="mb-3 text-center p-3"></div>
-              <Link onClick={() => clearCart(id)}>Clear cart</Link>
+              <Link className='clear-cart' onClick={() => clearCart(id)}>Clear cart</Link>
             </table>
           </div>
         </div>
         <hr />
         <div className="mt-4 p-3 cart-total d-flex justify-content-between">
           <div>
-            <button>Continue Shopping</button>
+            <button className='continue-shopping-btn' >Continue Shopping</button>
           </div>
           <div>
             <h3>Total</h3>
             <p className='my-2'>Total Products: {totalProducts}</p>
             <p className='total mb-4'>{TotalAmount}vnđ</p>
-            <button>Check Out</button>
+            <button className='check-out-btn'>Check Out</button>
           </div>
         </div>
       </section>

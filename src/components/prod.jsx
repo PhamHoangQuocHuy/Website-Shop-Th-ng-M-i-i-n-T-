@@ -33,12 +33,12 @@ const prod = (props) => {
                         activeColor="#ffd700"
                     />
                     <p className='price my-2'> {price} <span className='text-danger'> &nbsp; <strike>{price * 2}</strike></span></p>
-                    <div className='d-flex align-items-center justify-content-around mb-2'>
-                        <div className="col-6 d-flex align-items-center justify-content-around">
+                    <div className='action-buttons d-flex align-items-center justify-content-around mb-2'>
+                        <div className="col-6 d-flex align-items-center justify-content-around my-3">
                             <Link to={'/details'} className='view-button' onClick={() => viewProductDetails(id)}>View Details</Link>
                         </div>
                         <div className="col-6 d-flex align-items-center justify-content-around">
-                            <button className='add-btn'
+                            <button className='add-to-cart'
                                 onClick={() => {
                                     addToCart(id);
                                     event.target.classlist.toggle("text-success");
