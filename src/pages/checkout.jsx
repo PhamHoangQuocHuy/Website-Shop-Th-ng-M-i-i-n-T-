@@ -6,7 +6,7 @@ import { ShopContext } from '../components/shopcontext';
 import { PRODUCTS, PRODUCTS1 } from '../components/product';
 
 const checkout = () => {
-  const { getTotalCartProducts, getTotalCartAmount, resetCart,cartItems } = useContext(ShopContext);
+  const { getTotalCartProducts, getTotalCartAmount, resetCart, cartItems } = useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
   const totalProducts = getTotalCartProducts();
 
@@ -125,31 +125,9 @@ const checkout = () => {
             </form>
           </div>
         </div>
-
-
-      </div>
-
-
-    </section>
-    
-    <section>
-      <div className="container-xxl">
-        <div className="row">
-          <div className="text-center">
-            <h1 className='text-success'>All your product want to buy</h1>
-            <div>
-              <table>
-                <th>Image</th>
-                <th>Name</th>
-                <th>Brand</th>
-                <th>Price</th>
-                <th>Amount</th>
-              </table>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
+
   </>;
 }
 

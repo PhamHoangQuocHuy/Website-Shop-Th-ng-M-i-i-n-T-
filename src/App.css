@@ -368,7 +368,14 @@ button {
 .brand {
   color: var(--darken);
 }
-
+.add-to-cart{
+  background: var(--primary2);
+}
+.add-to-cart:hover{
+  background: white;
+  color: var(--primary2);
+  border: 1px solid var(--primary2);
+}
 
 /* Cart */
 input {
