@@ -5,9 +5,9 @@ import { ShopContext } from '../components/shopcontext'
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 const cart = () => {
-  const { getTotalCartAmount,getTotalCartProducts, clearCart, cartItems } = useContext(ShopContext);
+  const { getTotalCartAmount, getTotalCartProducts, clearCart, cartItems } = useContext(ShopContext);
   const TotalAmount = getTotalCartAmount();
-  const totalProducts =getTotalCartProducts();
+  const totalProducts = getTotalCartProducts();
   return <>
     {TotalAmount > 0 ?
       <section className='cart-item p-5'>
@@ -39,7 +39,7 @@ const cart = () => {
             <h3>Total</h3>
             <p className='my-2'>Total Products: {totalProducts}</p>
             <p className='total mb-4'>{TotalAmount}vnđ</p>
-            <button className='check-out-btn'>Check Out</button>
+            <Link to={'/checkout'}><button className='check-out-btn'>Check Out</button></Link>
           </div>
         </div>
       </section>
@@ -54,7 +54,7 @@ const cart = () => {
           </div>
         </div>
       </section>
-  }
+    }
 
   </>
 }

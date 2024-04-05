@@ -8,9 +8,11 @@ import About from './pages/about'
 import Contact from './pages/contact'
 import Cart from './pages/cart'
 import Login from './pages/login'
-import Wishlist from './pages/wishlist'
 import ShopContext from './components/shopcontext'
 import Details from './pages/details'
+import Signup from './pages/signup'
+import ForgotPassword from './pages/forgotpassword'
+import Checkout from './pages/checkout'
 function App() {
 
   return <>
@@ -25,8 +27,10 @@ function App() {
             <Route path='/contact' element={<Contact />} />
             <Route path='/cart' element={<Cart />} />
             <Route path='/login' element={<Login />} />
-            <Route path='/wishlist' element={<Wishlist />} />
             <Route path='/details' element={<Details />} />
+            <Route path='/signup' element={<Signup />} />
+            <Route path='/forgotpassword' element={<ForgotPassword />} />
+            <Route path='/checkout' element={<Checkout />} />
           </Route>
         </Routes>
       </BrowserRouter>

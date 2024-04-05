@@ -23,7 +23,7 @@ const prod = (props) => {
                     <img src={image} alt="" className='img-fluid card-img-top ' />
                 </div>
                 <div className="card-details p-3">
-                    <span> {brand} </span>
+                    <span className='brand'> {brand} </span>
                     <h5 className='my-2'> {truncateText(name, 20)} </h5>
                     <ReactStars
                         count={5}

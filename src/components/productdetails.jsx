@@ -1,7 +1,9 @@
+//Hiển thị các thông tin chi tiết sản phẩm
 import React from 'react'
 import { PRODUCTS, PRODUCTS1 } from './product';
 import { useContext } from 'react';
 import { ShopContext } from '../components/shopcontext';
+import { Link } from 'react-router-dom';
 function truncateText(text, maxLength) {
     if (text.length <= maxLength) {
         return text;
@@ -12,8 +14,9 @@ function truncateText(text, maxLength) {
 
 const productdetails = () => {
     const { viewProductDetails, addToCart, cartItems,
-        closeProductDetails, selectedProduct, updateCartItemCount, removeToCart
+        closeProductDetails, selectedProduct, updateCartItemCount, removeToCart,cartItemAmount
     } = useContext(ShopContext);
+    
     const productId = selectedProduct || 0;
     const product = PRODUCTS.find((p) => p.id === productId) || PRODUCTS1.find((p) => p.id === productId);
 
@@ -31,23 +34,16 @@ const productdetails = () => {
                         <p className='my-3'>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
                     </div>
 
-                    {/* Add */}
-                    <button className='add-btn mx-2'
-                        onClick={() => {
-                            addToCart(product.id);
-                        }
-                        }
-                    > +
-                    </button>
-                    <input type="text" value={cartItems[product.id]} onChange={(e) => updateCartItemCount(Number(e.target.value), product.id)} />
-                    {/* Remove */}
-                    <button className='add-btn mx-2'
-                        onClick={() => {
-                            removeToCart(product.id);
-                        }
-                        }
-                    > -
-                    </button>
+                    <div className='text-center'>
+                        <button
+                            onClick={() => {
+                                addToCart(product.id);
+                                event.target.classList.toggle("red");
+                            }}
+                            className='btn-submit'>Add to cart{cartItemAmount > 0 && ` (${cartItemAmount})`} </button>
+                            <Link className='mx-2' to={'/checkout'}><button className='btn-submit'>Buy now</button></Link>
+                    </div>
+
                     <div className="input-group p-4">
                         <input type="text" className="form-control"
                             placeholder="Enter Coupon code..." aria-label="Recipient's username"

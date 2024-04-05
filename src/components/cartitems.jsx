@@ -1,4 +1,4 @@
-// liệt kê sp đã bỏ vào giỏ hàng
+//Cách liệt kê sp đã bỏ vào giỏ hàng
 import React from 'react'
 import { useContext } from 'react';
 import { ShopContext } from './shopcontext';
@@ -21,7 +21,7 @@ const cartitems = (props) => {
                     <p>Items in stock: <span className="text-danger">1000</span></p>
                 </td>
 
-                <td>
+                <td className='text-center'> 
                     {/* Add */}
                     <button className='add-btn mx-2'
                         onClick={() => {

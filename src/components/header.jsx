@@ -12,7 +12,7 @@ import { ShopContext } from './shopcontext';
 const Header = () => {
   const location = useLocation();
   const { getTotalCartProducts } = useContext(ShopContext);
-  const totalProducts =getTotalCartProducts();
+  const totalProducts = getTotalCartProducts();
   return (
     <>
       <header className='header-top-strip p-1 px-4 shadow-sd'>
@@ -55,24 +55,18 @@ const Header = () => {
               <Link to={'/contact'} className={location.pathname === '/contact' ? 'active' : 'inactive'} style={{ marginRight: '10px' }}>Contact</Link>
 
               <div className='nav-links-nav d-flex align-items-center justify-content-between'>
-                <Link to={'/wishlist'} className={location.pathname === '/wishlist' ? 'active' : 'inactive'}>
-                  <div className='d-flex align-items-center mx-2'>
-                    <span><HiOutlineInboxIn className='fs-3'  size="20px" /></span>
-                    <p>Wishlist</p>
-                  </div>
-                </Link>
                 <Link to={'/login'} className={location.pathname === '/login' ? 'active' : 'inactive'}>
                   <div className='d-flex align-items-center mx-2'>
-                    <span><VscAccount className='fs-3'  size="20px" /></span>
+                    <span><VscAccount className='fs-3' size="20px" /></span>
                     <p>Account</p>
                   </div>
                 </Link>
                 <Link to={'/cart'} className={location.pathname === '/cart' ? 'active' : 'inactive'}>
                   <div className='d-flex align-items-center mx-2'>
-                      <LiaShoppingCartSolid className='fs-3'  />
-                      <p>Cart
+                    <LiaShoppingCartSolid className='fs-3' />
+                    <p>Cart
                       {totalProducts > 0 && `(${totalProducts})`}
-                      </p>
+                    </p>
                   </div>
                 </Link>
               </div>
