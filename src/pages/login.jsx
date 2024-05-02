@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -12,7 +11,6 @@ const Login = () => {
     if (password == '') {
       setError('Please enter correct details!');
     } else {
-      // TODO: Send signup request to server
       setError('Login successful');
       setEmail('');
       setPassword('');

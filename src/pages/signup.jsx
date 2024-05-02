@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -15,7 +14,6 @@ const Signup = () => {
     if (password !== confirmPassword) {
       setError('Passwords do not match');
     } else {
-      // TODO: Send signup request to server
       setError('Signup successful');
       setEmail('');
       setUserName('');
