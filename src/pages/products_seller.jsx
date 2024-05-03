@@ -3,7 +3,6 @@ import { BiSearch } from "react-icons/bi";
 import { AiOutlinePlus } from "react-icons/ai";
 import sp1 from '../assets/images/sp1.jpg';
 import Home from './home_seller';
-
 const Products = () => {
     const [showForm, setShowForm] = useState(false);
     const [products, setProducts] = useState([]);
