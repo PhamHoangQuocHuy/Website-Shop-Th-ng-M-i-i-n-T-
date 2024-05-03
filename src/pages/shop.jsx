@@ -2,6 +2,7 @@
 import React from 'react'
 import Shopitems from '../components/shopitems'
 const shop = () => {
+  
   return <>
     <section className='shop-banner p-2'>
       <div className="container-xxl">

@@ -3,7 +3,7 @@ import React from 'react'
 import { useContext } from 'react';
 import { ShopContext } from './shopcontext';
 const cartitems = (props) => {
-    const { id, name, image, price, brand } = props.data;
+    const { id, name, image, price, brand,des } = props.data;
     const { viewProductDetails, addToCart, cartItems, removeToCart, updateCartItemCount } = useContext(ShopContext);
 
     return <>
@@ -18,6 +18,7 @@ const cartitems = (props) => {
                     <p>Product brand: <span className="price">{brand}</span></p>
                     <p>Product name:  <span className='price'><b>{name}</b></span></p>
                     <p>Price: <span className="price">{price}</span></p>
+                    <p>Description: <span>{des}</span></p>
                     <p>Items in stock: <span className="text-danger">1000</span></p>
                 </td>
 

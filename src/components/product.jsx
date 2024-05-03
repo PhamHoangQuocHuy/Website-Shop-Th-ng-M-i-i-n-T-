@@ -7,6 +7,7 @@ export const PRODUCTS = [
     name: "Ốp lưng ip15 aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
     price: 100.00,
     brand: "lukaku",
+    des: "aaaaaa",
     status: "in stock",
     rate: "50% off"
   },
@@ -16,6 +17,7 @@ export const PRODUCTS = [
     name: "Ốp lưng ip15",
     price: 100.00,
     brand: "lukaku",
+    des: "bbbbb",
     status: "in stock",
     rate: "50% off"
   },
@@ -25,6 +27,7 @@ export const PRODUCTS = [
     name: "Ốp lưng ip15",
     price: 100.00,
     brand: "lukaku",
+    des: "ccccc",
     status: "in stock",
     rate: "50% off"
   },
@@ -34,6 +37,7 @@ export const PRODUCTS = [
     name: "Ốp lưng ip15",
     price: 100.00,
     brand: "lukaku",
+    des: "ddddd",
     status: "in stock",
     rate: "50% off"
   },
@@ -44,6 +48,7 @@ export const PRODUCTS = [
     name: "Ốp lưng ip15",
     price: 100.00,
     brand: "lukaku",
+    des: "eeeeeee",
     status: "in stock",
     rate: "50% off"
   },
@@ -54,6 +59,7 @@ export const PRODUCTS = [
     name: "Ốp lưng ip15",
     price: 100.00,
     brand: "lukaku",
+    des: "ffffffff",
     status: "in stock",
     rate: "50% off"
   },
@@ -66,6 +72,7 @@ export const PRODUCTS1 = [
     name: "Ốp lưng ip15 aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
     price: 100.00,
     brand: "lukaku",
+    des: "ggggggg",
     status: "in stock",
     rate: "50% off"
   },
@@ -75,6 +82,7 @@ export const PRODUCTS1 = [
     name: "Ốp lưng ip15",
     price: 100.00,
     brand: "lukaku",
+    des: "hhhhhhh",
     status: "in stock",
     rate: "50% off"
   },
@@ -84,6 +92,7 @@ export const PRODUCTS1 = [
     name: "Ốp lưng ip15",
     price: 100.00,
     brand: "lukaku",
+    des: "jjjjjjj",
     status: "in stock",
     rate: "50% off"
   },
@@ -93,6 +102,7 @@ export const PRODUCTS1 = [
     name: "Ốp lưng ip15",
     price: 100.00,
     brand: "lukaku",
+    des: "hhhhhhhh",
     status: "in stock",
     rate: "50% off"
   },
@@ -103,6 +113,7 @@ export const PRODUCTS1 = [
     name: "Ốp lưng ip15",
     price: 100.00,
     brand: "lukaku",
+    des: "kkkkkkkk",
     status: "in stock",
     rate: "50% off"
   },
@@ -113,6 +124,7 @@ export const PRODUCTS1 = [
     name: "Ốp lưng ip15",
     price: 100.00,
     brand: "lukaku",
+    des: "llllllllll",
     status: "in stock",
     rate: "50% off"
   },

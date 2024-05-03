@@ -31,7 +31,7 @@ const productdetails = () => {
                     <h3 className='my-3'>{product.name}</h3>
                     <div className="card-details">
                         <p className='my-3'><span className='fs-3 text-danger'>{product.price}vnđ </span>&nbsp; <strike>{product.price * 2}vnđ</strike></p>
-                        <p className='my-3'>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        <p className='my-3'>{product.des}</p>
                     </div>
 
                     <div className='text-center'>
